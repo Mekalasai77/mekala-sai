@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
-
+import { Link } from "react-router";
 const Navigation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const navRef = useRef(null);
@@ -27,16 +27,16 @@ const Navigation = () => {
     <nav ref={navRef} className="navbar">
       <ul className="navbar-links">
         <li onClick={() => handleClick(0)} className={activeIndex === 0 ? 'active' : ''}>
-          <a href="#home">Home</a>
+          <Link to="/home" >Home</Link>
         </li>
         <li onClick={() => handleClick(1)} className={activeIndex === 1 ? 'active' : ''}>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li onClick={() => handleClick(2)} className={activeIndex === 2 ? 'active' : ''}>
-          <a href="#projects">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li onClick={() => handleClick(3)} className={activeIndex === 3 ? 'active' : ''}>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <div className="background"></div>
