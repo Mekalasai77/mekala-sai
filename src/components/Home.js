@@ -7,7 +7,7 @@ const Home = () => {
             <span className="holder-svt">
                 <span className="stars-right-svt">
                     <span className="heading1">
-                        Hi. i'm Sai.
+                        Hi. i'm Sái.
                         <span>
                             <figure className="figure">
                                 <img className="img" src={star1} />
